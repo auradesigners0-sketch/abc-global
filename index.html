@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assembly of Believers Church</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="#home" class="nav-item active">Home</a>
+                <a href="#about" class="nav-item">About Us</a>
+                <a href="#ministries" class="nav-item">Ministries</a>
+            </div>
+            <div class="logo-container">
+                <img src="https://z-cdn-media.chatglm.cn/files/4adb6dfb-eaf1-4b6c-9acb-f3e00d4920ea_pasted_image_1761405454537.png?auth_key=1792942390-a3e20ab99c5547b687c552f3d5407e58-0-d805e5860068d538c59db7bf501daef3"
+                    alt="Assembly of Believers Church" class="logo">
+            </div>
+            <div class="nav-right">
+                <a href="#" class="nav-item">Sermons</a>
+                <a href="#giving" class="nav-item">Giving</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home" class="mobile-nav-item active">Home</a>
+            <a href="#about" class="mobile-nav-item">About Us</a>
+            <a href="#ministries" class="mobile-nav-item">Ministries</a>
+            <a href="#" class="mobile-nav-item">Sermons</a>
+            <a href="#giving" class="mobile-nav-item">Giving</a>
+            <a href="#contact" class="mobile-nav-item">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="carousel-container">
+            <div class="carousel-slide active" data-slide="1">
+                <div class="slide-bg"
+                    style="background-image: url('https://picsum.photos/seed/church-worship/1920/1080.jpg');"></div>
+                <div class="slide-content">
+                    <h1 class="slide-title fade-in-up">Assembly of Believers Church</h1>
+                </div>
+            </div>
+            <div class="carousel-slide" data-slide="2">
+                <div class="slide-bg"
+                    style="background-image: url('https://picsum.photos/seed/children-fire/1920/1080.jpg');"></div>
+                <div class="slide-content">
+                    <h1 class="slide-title slide-in-left">We Are for Signs and Wonders</h1>
+                </div>
+            </div>
+            <div class="carousel-slide" data-slide="3">
+                <div class="slide-bg"
+                    style="background-image: url('https://picsum.photos/seed/fire-crowd/1920/1080.jpg');"></div>
+                <div class="slide-content">
+                    <h1 class="slide-title zoom-in">Raising a Fire Brand Generation Holy Unto God</h1>
+                </div>
+            </div>
+
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <span class="indicator active" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+                <span class="indicator" data-slide="3"></span>
+            </div>
+
+            <!-- Call-to-Action Buttons -->
+            <div class="cta-buttons">
+                <a href="#about" class="cta-button"><span>Get Started</span></a>
+                <a href="#" class="cta-button"><span>Join Us This Sunday</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <!-- Intro Section -->
+        <div class="intro-section">
+            <div class="container">
+                <div class="split-layout">
+                    <div class="text-content">
+                        <h1 class="section-title">About Us</h1>
+                        <h2 class="section-subtitle">Learn more about our journey, vision, mission, and values.</h2>
+                        <p class="section-text">
+                            ABC Global Church Tanzania was founded in 2016 by Bishop Dickson Cornel Kabigumila in
+                            Kahama, a town in north-western Tanzania. The church began with a small congregation under a
+                            tree and has grown to include multiple branches across the country. Our headquarters are in
+                            Dar es Salaam, where we continue to foster spiritual growth and community engagement. Over
+                            the years, we've expanded our reach through numerous branches that aim to spread the message
+                            of hope and faith throughout the nation.
+                        </p>
+                        <a href="#values" class="cta-button explore-btn"><span>Explore More</span></a>
+                    </div>
+                    <div class="image-content">
+                        <div class="image-wrapper">
+                            <img src="https://picsum.photos/seed/church-worship-community/800/1200.jpg"
+                                alt="Church Community" class="featured-image">
+                            <div class="image-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mission & Vision Section -->
+        <div class="mission-vision-section">
+            <div class="container">
+                <div class="two-column-layout">
+                    <div class="column vision-column">
+                        <div class="content-card">
+                            <h2 class="column-title">Our Vision</h2>
+                            <p class="column-text">To raise a fire brand generation, holy unto God, empowered to impact
+                                the world.</p>
+                        </div>
+                    </div>
+                    <div class="column mission-column">
+                        <div class="content-card">
+                            <h2 class="column-title">Our Mission</h2>
+                            <p class="column-text">We exist to glorify God, equip believers, and serve our community
+                                through worship, discipleship, and outreach.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Core Values Section -->
+        <div id="values" class="values-section">
+            <div class="container">
+                <h2 class="section-title centered">Our Core Values</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="value-title">Holiness</h3>
+                        <p class="value-description">Living set apart for God's purpose</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="value-title">Prayer</h3>
+                        <p class="value-description">Seeking God's presence daily and corporately</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="value-title">Word of God</h3>
+                        <p class="value-description">Rooted in scripture and truth</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 class="value-title">Community</h3>
+                        <p class="value-description">Building strong, loving relationships</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                            </svg>
+                        </div>
+                        <h3 class="value-title">Worship</h3>
+                        <p class="value-description">Expressing devotion through music and praise</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="value-title">Outreach</h3>
+                        <p class="value-description">Serving and transforming our city and beyond</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Join Community Section -->
+        <div class="join-section">
+            <div class="container">
+                <div class="join-content">
+                    <h2 class="section-title">Become a Part of Our Community</h2>
+                    <p class="section-text">Discover how you can get involved and make a difference with Assembly of
+                        Believers Church.</p>
+                    <a href="#ministries" class="cta-button join-btn"><span>Join the Family</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ministries & Programs Section -->
+    <section id="ministries" class="ministries-section">
+        <div class="container">
+            <h2 class="section-title centered">Ministries & Programs</h2>
+
+            <!-- Ministry Tabs Header (Desktop Only) -->
+            <div class="ministry-tabs desktop-only">
+                <div class="ministry-tab active" data-ministry="retreat-camps">
+                    <span>Retreat Camps</span>
+                </div>
+                <div class="ministry-tab" data-ministry="destiny-gathering">
+                    <span>Destiny Gathering</span>
+                </div>
+                <div class="ministry-tab" data-ministry="school-of-ministry">
+                    <span>School of Ministry</span>
+                </div>
+                <div class="ministry-tab" data-ministry="business-school">
+                    <span>Kabigumila Business School</span>
+                </div>
+                <div class="ministry-tab" data-ministry="training-depot">
+                    <span>Destiny Training Depot</span>
+                </div>
+            </div>
+
+            <!-- Main Display Section -->
+            <div class="ministry-display">
+                <!-- Desktop Split Layout -->
+                <div class="ministry-content desktop">
+                    <div class="ministry-description">
+                        <h3 class="ministry-title">Retreat Camps</h3>
+                        <p class="ministry-subtitle">Spiritual renewal and fellowship</p>
+                        <p class="ministry-text">
+                            Our retreat camps are held three times a year (March/April, August, and December) to provide
+                            opportunities for spiritual renewal, deep fellowship, and transformative teaching. These
+                            camps are designed to help believers disconnect from daily distractions and reconnect with
+                            God in a powerful way.
+                        </p>
+                        <div class="ministry-buttons">
+                            <a href="#" class="cta-button"><span>Learn More</span></a>
+                            <a href="#" class="cta-button"><span>Explore</span></a>
+                        </div>
+                    </div>
+                    <div class="ministry-image">
+                        <img src="https://picsum.photos/seed/retreat-camp/800/600.jpg" alt="Retreat Camps">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+
+                <!-- Mobile Scrollable Cards -->
+                <div class="ministry-cards mobile">
+                    <div class="ministry-card active" data-ministry="retreat-camps">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/retreat-camp/400/300.jpg" alt="Retreat Camps">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Retreat Camps</h3>
+                            <p class="card-subtitle">Spiritual renewal and fellowship</p>
+                            <p class="card-text">
+                                Our retreat camps are held three times a year to provide opportunities for spiritual
+                                renewal and deep fellowship.
+                            </p>
+                            <div class="card-buttons">
+                                <a href="#" class="cta-button"><span>Learn More</span></a>
+                                <a href="#" class="cta-button"><span>Explore</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ministry-card" data-ministry="destiny-gathering">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/destiny-gathering/400/300.jpg" alt="Destiny Gathering">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Destiny Gathering</h3>
+                            <p class="card-subtitle">Revival and prophetic alignment</p>
+                            <p class="card-text">
+                                Held every June, this gathering focuses on revival, prophetic alignment, and impartation
+                                for all believers.
+                            </p>
+                            <div class="card-buttons">
+                                <a href="#" class="cta-button"><span>Learn More</span></a>
+                                <a href="#" class="cta-button"><span>Explore</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ministry-card" data-ministry="school-of-ministry">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/school-of-ministry/400/300.jpg"
+                                alt="School of Ministry">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">School of Ministry</h3>
+                            <p class="card-subtitle">Equipping spiritual leaders</p>
+                            <p class="card-text">
+                                Held every July, this school equips ministers, intercessors, and spiritual leaders with
+                                biblical foundations.
+                            </p>
+                            <div class="card-buttons">
+                                <a href="#" class="cta-button"><span>Learn More</span></a>
+                                <a href="#" class="cta-button"><span>Explore</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ministry-card" data-ministry="business-school">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/business-school/400/300.jpg"
+                                alt="Kabigumila Business School">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Kabigumila Business School</h3>
+                            <p class="card-subtitle">Entrepreneurship with kingdom principles</p>
+                            <p class="card-text">
+                                Held every August, this school focuses on entrepreneurship and financial stewardship
+                                with kingdom principles.
+                            </p>
+                            <div class="card-buttons">
+                                <a href="#" class="cta-button"><span>Learn More</span></a>
+                                <a href="#" class="cta-button"><span>Explore</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ministry-card" data-ministry="training-depot">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/training-depot/400/300.jpg"
+                                alt="Destiny Training Depot">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Destiny Training Depot</h3>
+                            <p class="card-subtitle">Leadership development</p>
+                            <p class="card-text">
+                                Held every October, this program provides leadership development and strategic
+                                mentorship for ministry leaders.
+                            </p>
+                            <div class="card-buttons">
+                                <a href="#" class="cta-button"><span>Learn More</span></a>
+                                <a href="#" class="cta-button"><span>Explore</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Evangelism Channels Section -->
+    <section id="digital" class="digital-section">
+        <div class="container">
+            <h2 class="section-title centered">Digital Evangelism Channels</h2>
+            <h3 class="section-subtitle centered">Spreading the fire across every platform</h3>
+            <p class="section-text centered">
+                Assembly of Believers Church is committed to reaching souls through every available medium. Our digital
+                channels carry the message of holiness, revival, and purpose to believers across Tanzania and beyond.
+            </p>
+
+            <!-- Channel Grid -->
+            <div class="channel-grid">
+                <div class="channel-card">
+                    <div class="channel-icon youtube">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                        </svg>
+                    </div>
+                    <h3 class="channel-title">YouTube</h3>
+                    <p class="channel-description">Full sermons, worship sessions, prophetic teachings, and event
+                        livestreams</p>
+                    <a href="#" class="channel-link">Visit Channel</a>
+                </div>
+
+                <div class="channel-card">
+                    <div class="channel-icon facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                    </div>
+                    <h3 class="channel-title">Facebook</h3>
+                    <p class="channel-description">Weekly updates, event announcements, live broadcasts, and community
+                        engagement</p>
+                    <a href="#" class="channel-link">Visit Page</a>
+                </div>
+
+                <div class="channel-card">
+                    <div class="channel-icon instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z" />
+                        </svg>
+                    </div>
+                    <h3 class="channel-title">Instagram</h3>
+                    <p class="channel-description">Visual storytelling, worship highlights, scripture posts, and
+                        behind-the-scenes moments</p>
+                    <a href="#" class="channel-link">Follow Us</a>
+                </div>
+
+                <div class="channel-card">
+                    <div class="channel-icon tiktok">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.88-.27-1.85-.36-2.75-.14-1.18.32-2.15 1.3-2.45 2.49-.05.21-.08.43-.08.65.01.66.19 1.32.51 1.88.67 1.18 2.04 1.92 3.4 1.84 1.09-.05 2.13-.62 2.78-1.51.36-.51.58-1.11.65-1.73.07-.85.04-1.71.04-2.57.01-4.02.01-8.04 0-12.06z" />
+                        </svg>
+                    </div>
+                    <h3 class="channel-title">TikTok</h3>
+                    <p class="channel-description">Short-form teachings, worship clips, and youth-focused inspiration
+                    </p>
+                    <a href="#" class="channel-link">Follow Us</a>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="digital-cta">
+                <p class="cta-text">Follow us, share the fire, and be part of the digital revival.</p>
+                <a href="#" class="cta-button"><span>Visit Our Channels</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Giving & Offering Section -->
+    <section id="giving" class="giving-section">
+        <div class="container">
+            <h2 class="section-title centered">Giving & Offering</h2>
+
+            <div class="giving-content">
+                <div class="why-give">
+                    <h3 class="giving-subtitle">Why We Give</h3>
+                    <blockquote class="scripture-quote">
+                        "Each one must give as he has decided in his heart, not reluctantly or under compulsion, for God
+                        loves a cheerful giver."
+                        <cite>📖 2 Corinthians 9:7</cite>
+                    </blockquote>
+                </div>
+
+                <div class="what-supports">
+                    <h3 class="giving-subtitle">What Giving Supports</h3>
+                    <ul class="supports-list">
+                        <li>Evangelism & Outreach</li>
+                        <li>Media & Tech expansion</li>
+                        <li>Retreats, Gatherings, and leadership training</li>
+                        <li>Youth & Children's Ministry</li>
+                        <li>Church operations</li>
+                    </ul>
+                </div>
+
+                <div class="ways-to-give">
+                    <h3 class="giving-subtitle">Ways to Give</h3>
+
+                    <div class="giving-methods">
+                        <div class="giving-method">
+                            <h4 class="method-title">Bank Transfer</h4>
+                            <div class="method-details">
+                                <p><strong>Account Name:</strong> Assembly of Believers Church</p>
+                                <p><strong>Bank Name:</strong> [Insert Bank Name]</p>
+                                <p><strong>Account Number:</strong> [Insert Account Number]</p>
+                            </div>
+                        </div>
+
+                        <div class="giving-method">
+                            <h4 class="method-title">Mobile Money</h4>
+                            <div class="method-details">
+                                <p><strong>M-Pesa:</strong> +255 XXX XXX XXX</p>
+                                <p><strong>MIXX BY YAS:</strong> +255 XXX XXX XXX</p>
+                                <p><strong>Name:</strong> Assembly of Believers Church</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title centered">Contact Us</h2>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <p><strong>Phone:</strong> +255 655 466 675 / +255 753 466 675</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <p><strong>Website:</strong> abcglobal.or.tz</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <p><strong>Location:</strong> Tanzania</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-media">
+                    <h3 class="giving-subtitle">Social Media</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link youtube">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                            </svg>
+                            <span>YouTube</span>
+                        </a>
+                        <a href="#" class="social-link facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#" class="social-link instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z" />
+                            </svg>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#" class="social-link tiktok">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.88-.27-1.85-.36-2.75-.14-1.18.32-2.15 1.3-2.45 2.49-.05.21-.08.43-.08.65.01.66.19 1.32.51 1.88.67 1.18 2.04 1.92 3.4 1.84 1.09-.05 2.13-.62 2.78-1.51.36-.51.58-1.11.65-1.73.07-.85.04-1.71.04-2.57.01-4.02.01-8.04 0-12.06z" />
+                            </svg>
+                            <span>TikTok</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branch Locations Section -->
+    <section id="branches" class="branches-section">
+        <div class="container">
+            <h2 class="section-title centered">Branch Locations</h2>
+            <p class="section-text centered">
+                Assembly of Believers Church has active branches across Tanzania, serving communities in both urban and
+                rural regions. Whether you're in Dar es Salaam, Arusha, Mwanza, Mbeya, Dodoma, or beyond—there's a place
+                for you to worship, grow, and connect.
+            </p>
+            <p class="section-text centered">
+                We invite you to find the nearest ABC Global Church branch and join us this Sunday.
+            </p>
+
+            <div class="branch-cta">
+                <a href="#" class="cta-button"><span>Find a Church Near You</span></a>
+            </div>
+
+            <div class="headquarters">
+                <h3 class="giving-subtitle">ABC Global Headquarters</h3>
+                <div class="headquarters-info">
+                    <div class="hq-details">
+                        <p><strong>Location:</strong> Salasala Road, Dar es Salaam, Tanzania</p>
+                        <p><strong>Open Hours:</strong> Closes 6 PM</p>
+                        <p><strong>Rating:</strong> 4.6 (11 reviews)</p>
+                        <p><strong>Overview:</strong> Headquarters offering full ministry services, media outreach, and
+                            leadership training</p>
+                    </div>
+                    <div class="hq-map">
+                        <img src="https://picsum.photos/seed/church-map/600/400.jpg" alt="ABC Global Headquarters Map">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#ministries">Ministries</a></li>
+                        <li><a href="#">Sermons</a></li>
+                        <li><a href="#giving">Giving & Offering</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Church Information</h3>
+                    <div class="footer-info">
+                        <p>Assembly of Believers Church</p>
+                        <p>Dar es Salaam, Tanzania</p>
+                        <p>Email: info@abcglobal.or.tz</p>
+                        <p>Phone: +255 655 466 675 / +255 753 466 675</p>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Social Media</h3>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link youtube">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social-link facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social-link instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social-link tiktok">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.88-.27-1.85-.36-2.75-.14-1.18.32-2.15 1.3-2.45 2.49-.05.21-.08.43-.08.65.01.66.19 1.32.51 1.88.67 1.18 2.04 1.92 3.4 1.84 1.09-.05 2.13-.62 2.78-1.51.36-.51.58-1.11.65-1.73.07-.85.04-1.71.04-2.57.01-4.02.01-8.04 0-12.06z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <blockquote class="footer-scripture">
+                    "We are for signs and wonders in Tanzania and the nations." — Isaiah 8:18
+                </blockquote>
+                <p class="copyright">© 2025 Assembly of Believers Church. All rights reserved.</p>
+                <p class="designer">Website by Aura Web Designers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Radio Player -->
+    <div class="radio-player" id="radioPlayer">
+        <audio id="radio" src="https://stream.zeno.fm/tvb2jrc38hmuv" preload="none"></audio>
+        <div class="radio-icon" id="radioIcon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"></path>
+                <path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"></path>
+                <path d="M19.1 4.9c3.9 3.9 3.9 10.2 0 14.1"></path>
+            </svg>
+        </div>
+        <div class="radio-controls" id="radioControls">
+            <div class="radio-info">
+                <div class="radio-title">ABC Radio Live</div>
+                <div class="radio-status" id="radioStatus">Click to play</div>
+            </div>
+            <div class="radio-buttons">
+                <button class="radio-btn play-pause" id="playPauseBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                </button>
+                <div class="volume-control">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                        <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                    </svg>
+                    <input type="range" class="volume-slider" id="volumeSlider" min="0" max="1" step="0.1" value="0.7">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
