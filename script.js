@@ -39,7 +39,7 @@ function showToast(message, type = 'info') {
     }, 3000);
 }
 
-// --- MOBILE MENU (PROFESSIONAL OVERLAY LOGIC) ---
+// --- MOBILE MENU LOGIC ---
 const menuToggle = document.getElementById('menu-toggle');
 const mobileDrawer = document.getElementById('mobile-nav-drawer');
 const mobileOverlay = document.getElementById('mobile-overlay');
@@ -54,11 +54,9 @@ function toggleMenu() {
     mobileDrawer.classList.toggle('active');
     mobileOverlay.classList.toggle('active');
 
-    // Handle Staggered Animation for Links
     if (!isOpen) {
-        // Opening: Add delays
         mobileListItems.forEach((item, index) => {
-            item.style.transition = 'none'; // Reset
+            item.style.transition = 'none'; 
             item.style.opacity = '0';
             item.style.transform = 'translateY(20px)';
             
@@ -66,10 +64,9 @@ function toggleMenu() {
                 item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
                 item.style.opacity = '1';
                 item.style.transform = 'translateY(0)';
-            }, 100 + (index * 100)); // Stagger delay
+            }, 100 + (index * 100));
         });
     } else {
-        // Closing: Reset instantly
         mobileListItems.forEach(item => {
             item.style.transition = 'none';
             item.style.opacity = '0';
@@ -78,13 +75,8 @@ function toggleMenu() {
 }
 
 menuToggle.addEventListener('click', toggleMenu);
-
-// Close via 'X' button
 mobileCloseTrigger.addEventListener('click', toggleMenu);
-
-// Close menu when clicking overlay
 mobileOverlay.addEventListener('click', toggleMenu);
-
 mobileLinkItems.forEach(item => {
     item.addEventListener('click', toggleMenu);
 });
@@ -103,37 +95,51 @@ function checkReveal() {
 window.addEventListener('scroll', checkReveal);
 checkReveal();
 
-// --- FIXED HEADER LOGIC ---
+// --- FIXED HEADER LOGIC (Hide on Down, Show on Up) ---
 const mainHeader = document.getElementById('main-header');
+let lastScrollTop = 0;
+const scrollDelta = 5; // Minimum scroll distance to trigger direction change
 
 window.addEventListener('scroll', function() {
     let st = window.pageYOffset || document.documentElement.scrollTop;
     
+    // Handle Glassmorphism Background Change
     if (st <= 0) {
         mainHeader.classList.remove('scrolled');
     } else {
         mainHeader.classList.add('scrolled');
     }
+
+    // Handle Disappearing/Reappearing based on scroll direction
+    // Only trigger if scroll distance is significant enough
+    if (Math.abs(lastScrollTop - st) <= scrollDelta) {
+        lastScrollTop = st <= 0 ? 0 : st;
+        return;
+    }
+
+    if (st > lastScrollTop) {
+        // Scrolling Down -> Hide nav
+        mainHeader.classList.add('nav-hidden');
+    } else {
+        // Scrolling Up -> Show nav
+        mainHeader.classList.remove('nav-hidden');
+    }
+    
+    lastScrollTop = st <= 0 ? 0 : st;
 });
 
-// --- HISTORY SLIDER LOGIC (2 Images, 5 Seconds) ---
+// --- HISTORY SLIDER LOGIC ---
 const historySlides = document.querySelectorAll('.history-slide');
 const historyDots = document.querySelectorAll('.slider-dot');
 let currentHistorySlide = 0;
 let historyInterval;
 
 function showHistorySlide(index) {
-    // Remove active from all
     historySlides.forEach(slide => slide.classList.remove('active'));
     historyDots.forEach(dot => dot.classList.remove('active'));
 
-    // Add active to target
-    if (index >= historySlides.length) {
-        index = 0; 
-    }
-    if (index < 0) {
-        index = historySlides.length -1;
-    }
+    if (index >= historySlides.length) index = 0; 
+    if (index < 0) index = historySlides.length - 1;
 
     historySlides[index].classList.add('active');
     historyDots[index].classList.add('active');
@@ -141,10 +147,8 @@ function showHistorySlide(index) {
 }
 
 function startHistorySlider() {
-    // Clear existing just in case
     if (historyInterval) clearInterval(historyInterval);
     showHistorySlide(0);
-
     historyInterval = setInterval(() => {
         showHistorySlide(currentHistorySlide + 1);
     }, 5000);
@@ -210,17 +214,15 @@ const iframe = document.getElementById('youtube-iframe');
 const closeModal = document.querySelector('.close-modal');
 
 window.openYouTubeModal = function(videoId) {
-    // Set the src with autoplay enabled
     iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
     modal.classList.add('active');
 };
 
 closeModal.onclick = function() {
     modal.classList.remove('active');
-    iframe.src = ""; // Stop video by removing src
+    iframe.src = ""; 
 };
 
-// Close if clicked outside content
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.classList.remove('active');
@@ -228,11 +230,11 @@ window.onclick = function(event) {
     }
 };
 
-// --- MINISTRIES LOGIC (With Data) ---
+// --- MINISTRIES LOGIC ---
 const ministriesData = [
     {
-        label: "RETREAT CAMPS", // Name
-        title: "THREE TIMES A YEAR", // Schedule
+        label: "RETREAT CAMPS",
+        title: "THREE TIMES A YEAR",
         desc: "Frequency: Three times a year<br>Months: March or April, August, and December<br>Purpose: Spiritual renewal, fellowship, and deep teaching",
         img: "images/retreat.jpg"
     },
@@ -269,7 +271,6 @@ const descEl = document.getElementById('min-desc');
 const imgEl = document.getElementById('min-image');
 const contentGrid = document.querySelector('.ministry-content-grid');
 
-// Mobile Controls
 const minPrevBtn = document.getElementById('mobile-min-prev');
 const minNextBtn = document.getElementById('mobile-min-next');
 
@@ -294,17 +295,14 @@ function loadMinistry(index) {
     contentGrid.classList.remove('fade-enter');
     void contentGrid.offsetWidth; 
 
-    // UPDATED MAPPING: Name -> Big, Schedule -> Small
-    titleEl.textContent = ministriesData[index].label; // Name -> H3
-    labelEl.textContent = ministriesData[index].title; // Schedule -> Span
-
+    titleEl.textContent = ministriesData[index].label;
+    labelEl.textContent = ministriesData[index].title;
     descEl.innerHTML = ministriesData[index].desc;
     imgEl.src = ministriesData[index].img;
 
     contentGrid.classList.add('fade-enter');
 }
 
-// --- MOBILE MINISTRY ARROW LOGIC ---
 if(minPrevBtn && minNextBtn) {
     minPrevBtn.addEventListener('click', () => {
         let newIndex = currentMinIndex - 1;
@@ -324,10 +322,9 @@ const eventGrid = document.querySelector('.events-grid');
 const prevEventBtn = document.getElementById('mobile-event-prev');
 const nextEventBtn = document.getElementById('mobile-event-next');
 
-// Check if elements exist (mobile only)
 if(eventGrid && prevEventBtn && nextEventBtn) {
     let eventScrollAmount = 0;
-    const scrollAmount = 350; // Approximate card width + gap
+    const scrollAmount = 350; 
 
     prevEventBtn.addEventListener('click', () => {
         eventGrid.scrollBy({

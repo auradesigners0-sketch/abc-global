@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assembly of Believers Church | Welcome Home</title>
 
-    <!-- Fonts: Playfair Display (Elegant) & Montserrat (Clean/Nav) -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,10 +22,10 @@
 
 <body>
 
-    <!-- MOBILE OVERLAY (Solid Black) -->
+    <!-- MOBILE OVERLAY -->
     <div id="mobile-overlay" class="mobile-overlay"></div>
 
-    <!-- TOAST -->
+    <!-- TOAST NOTIFICATION -->
     <div id="toast-container"></div>
 
     <!-- YOUTUBE VIDEO MODAL -->
@@ -38,13 +38,13 @@
         </div>
     </div>
 
-    <!-- AUDIO -->
+    <!-- AUDIO PLAYER -->
     <audio id="live-stream" preload="none">
         <source src="https://stream.zeno.fm/tvb2jrc38hmuv" type="audio/mpeg">
         Your browser does not support audio element.
     </audio>
 
-    <!-- RADIO PLAYER -->
+    <!-- RADIO PLAYER WIDGET -->
     <div class="radio-player intro-element intro-radio" id="radio-container">
         <div class="radio-trigger-icon" id="expand-trigger" title="Open Radio">
             <i class="fas fa-broadcast-tower"></i>
@@ -73,25 +73,25 @@
     <header id="main-header" class="intro-element intro-nav">
         <div class="container">
             <nav>
-                <!-- LEFT: LOGO BOX (No Border Radius) -->
+                <!-- LEFT: LOGO BOX -->
                 <a href="#" class="logo-box-container">
                     <img src="images/logo.png" alt="Assembly of Believers Church Logo">
                     <span class="logo-abc-label">ABC</span>
                 </a>
 
-                <!-- CENTER: NAV LINKS (GLASSMORPHIC, SHARP, GOLD) -->
+                <!-- CENTER: NAV LINKS -->
                 <ul class="nav-links-center">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#sermons">Sermons</a></li>
-                    <li><a href="#footer">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="event.html">Events</a></li>
+                    <li><a href="sermons.html">Sermons</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
 
-                <!-- RIGHT: WHITE OFFERING BUTTON -->
-                <a href="#sacrifice" class="nav-cta-btn">OFFERING</a>
+                <!-- RIGHT: OFFERING BUTTON -->
+                <a href="contact.html" class="nav-cta-btn">OFFERING</a>
 
-                <!-- PREMIUM MOBILE TOGGLE (Small Character) -->
+                <!-- MOBILE BURGER MENU -->
                 <div class="menu-toggle" id="menu-toggle">
                     <span></span>
                     <span></span>
@@ -100,31 +100,25 @@
             </nav>
         </div>
 
-        <!-- MOBILE NAV DRAWER (WHITE BACKGROUND) -->
+        <!-- MOBILE NAV DRAWER -->
         <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+            <div class="mobile-close-btn" id="mobile-close-trigger"></div>
 
-            <!-- Close Button (Color: Black) -->
-            <div class="mobile-close-btn" id="mobile-close-trigger">
-            </div>
-
-            <!-- Logo Area (Visible on White) -->
             <div class="mobile-drawer-header">
                 <img class="mobile-drawer-logo" src="images/logo.png" alt="Logo">
                 <div class="mobile-drawer-text">ASSEMBLY OF BELIEVERS</div>
             </div>
 
-            <!-- Navigation List (Small Font) -->
             <ul class="mobile-links-list" id="mobile-list-container">
                 <li><a href="#home" class="mobile-link-item">Home</a></li>
-                <li><a href="#events" class="mobile-link-item">Events</a></li>
-                <li><a href="#sermons" class="mobile-link-item">Sermons</a></li>
-                <li><a href="#ministries" class="mobile-link-item">Ministries</a></li>
-                <li><a href="#footer" class="mobile-link-item">Contact</a></li>
+                <li><a href="about.html" class="mobile-link-item">About</a></li>
+                <li><a href="event.html" class="mobile-link-item">Events</a></li>
+                <li><a href="sermons.html" class="mobile-link-item">Sermons</a></li>
+                <li><a href="contact.html" class="mobile-link-item">Contact</a></li>
             </ul>
 
-            <!-- Bottom CTA -->
             <div class="mobile-cta-wrapper">
-                <a href="#sacrifice" class="mobile-cta-btn">OFFERING</a>
+                <a href="contact.html" class="mobile-cta-btn">OFFERING</a>
             </div>
         </div>
     </header>
@@ -138,92 +132,15 @@
         </div>
     </section>
 
-    <!-- UPCOMING EVENTS -->
-    <section class="events-interact" id="events">
-        <div class="container">
-
-            <!-- Title -->
-            <div class="title-under-blocks reveal">
-                <span>Stay Connected</span>
-                <h2>Upcoming Events</h2>
-            </div>
-
-            <!-- Event Cards Grid -->
-            <div class="events-grid">
-                <div class="event-card reveal">
-                    <div class="event-card-img">
-                        <img src="images/sunday.png" alt="Sunday Service">
-                        <div class="date-badge"><span>Jan</span><strong>18</strong></div>
-                    </div>
-                    <div class="event-card-details">
-                        <h3>First Sunday Service</h3>
-                        <div class="event-meta">
-                            <div><i class="far fa-clock"></i> 9:00 AM – 12:30 PM</div>
-                            <div><i class="fas fa-map-marker-alt"></i> Main Sanctuary</div>
-                        </div>
-                        <p>Join us for a powerful English service and spiritual empowerment.</p>
-                        <a href="#" class="event-link">Event Details <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="event-card reveal">
-                    <div class="event-card-img">
-                        <img src="images/sunday2.png" alt="Revival">
-                        <div class="date-badge"><span>Jan</span><strong>22</strong></div>
-                    </div>
-                    <div class="event-card-details">
-                        <h3>Midweek Revival</h3>
-                        <div class="event-meta">
-                            <div><i class="far fa-clock"></i> 6:00 PM – 8:30 PM</div>
-                            <div><i class="fas fa-map-marker-alt"></i> Kinzudi HQ</div>
-                        </div>
-                        <p>A time of deep spiritual refreshing, prayer, and worship.</p>
-                        <a href="#" class="event-link">Event Details <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="event-card reveal">
-                    <div class="event-card-img">
-                        <img src="images/sunday3.png" alt="Youth">
-                        <div class="date-badge"><span>Jan</span><strong>25</strong></div>
-                    </div>
-                    <div class="event-card-details">
-                        <h3>Leadership Mentorship</h3>
-                        <div class="event-meta">
-                            <div><i class="far fa-clock"></i> 10:00 AM – 1:00 PM</div>
-                            <div><i class="fas fa-map-marker-alt"></i> Conference Hall</div>
-                        </div>
-                        <p>Empowering next generation of leaders through biblical principles.</p>
-                        <a href="#" class="event-link">Event Details <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- NEW MOBILE EVENT CONTROLS (Sharp Boxes) -->
-            <div class="mobile-events-controls">
-                <button class="mobile-event-arrow" id="mobile-event-prev">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="mobile-event-arrow" id="mobile-event-next">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-            </div>
-
-        </div>
-    </section>
-
     <!-- ABOUT US (HISTORY SLIDER) -->
     <section class="about-section" id="about">
         <div class="container">
             <div class="welcome-grid">
                 <div class="welcome-img reveal">
-                    <!-- HISTORY SLIDER WITH 2 IMAGES -->
                     <div class="history-slider-container" id="history-slider">
-                        <!-- Image 1 -->
                         <img src="images/about us.jpg" class="history-slide active"
                             alt="Bishop Dickson Cornel Kabigumila">
-                        <!-- Image 2 -->
                         <img src="images/home 4.jpg" class="history-slide" alt="Church Building">
-
-                        <!-- DOTS -->
                         <div class="slider-dots">
                             <span class="slider-dot active" onclick="manualSlide(0)"></span>
                             <span class="slider-dot" onclick="manualSlide(1)"></span>
@@ -251,7 +168,7 @@
         </div>
     </section>
 
-    <!-- VERSE WITH SHAPE BACKGROUND -->
+    <!-- VERSE SECTION -->
     <div class="verse-break-wrapper">
         <div class="verse-card reveal">
             <div class="verse-content">
@@ -262,53 +179,106 @@
         </div>
     </div>
 
-    <!-- MINISTRY SECTION -->
-    <section class="ministries-section" id="ministries">
-        <!-- Header -->
-        <div class="ministries-header reveal">
-            <!-- HIDDEN ON MOBILE -->
-            <div class="ministries-top-label">Ministries</div>
-            <div class="ministries-nav-row" id="ministry-tabs">
-                <!-- Tabs injected via JS -->
+    <!-- UPCOMING EVENTS -->
+    <section class="events-interact" id="events">
+        <div class="container">
+            <div class="title-under-blocks reveal">
+                <span>Stay Connected</span>
+                <h2>Upcoming Events</h2>
+            </div>
+            <div class="events-grid">
+                <!-- Event 1 -->
+                <div class="event-card reveal">
+                    <div class="event-card-img">
+                        <img src="images/sunday.png" alt="Sunday Service">
+                        <div class="date-badge"><span>Jan</span><strong>18</strong></div>
+                    </div>
+                    <div class="event-card-details">
+                        <h3>First Sunday Service</h3>
+                        <div class="event-meta">
+                            <div><i class="far fa-clock"></i> 9:00 AM – 12:30 PM</div>
+                            <div><i class="fas fa-map-marker-alt"></i> Main Sanctuary</div>
+                        </div>
+                        <p>Join us for a powerful English service and spiritual empowerment.</p>
+                        <a href="#" class="event-link">Event Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Event 2 -->
+                <div class="event-card reveal">
+                    <div class="event-card-img">
+                        <img src="images/sunday2.png" alt="Revival">
+                        <div class="date-badge"><span>Jan</span><strong>22</strong></div>
+                    </div>
+                    <div class="event-card-details">
+                        <h3>Midweek Revival</h3>
+                        <div class="event-meta">
+                            <div><i class="far fa-clock"></i> 6:00 PM – 8:30 PM</div>
+                            <div><i class="fas fa-map-marker-alt"></i> Kinzudi HQ</div>
+                        </div>
+                        <p>A time of deep spiritual refreshing, prayer, and worship.</p>
+                        <a href="#" class="event-link">Event Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Event 3 -->
+                <div class="event-card reveal">
+                    <div class="event-card-img">
+                        <img src="images/sunday3.png" alt="Youth">
+                        <div class="date-badge"><span>Jan</span><strong>25</strong></div>
+                    </div>
+                    <div class="event-card-details">
+                        <h3>Leadership Mentorship</h3>
+                        <div class="event-meta">
+                            <div><i class="far fa-clock"></i> 10:00 AM – 1:00 PM</div>
+                            <div><i class="fas fa-map-marker-alt"></i> Conference Hall</div>
+                        </div>
+                        <p>Empowering next generation of leaders through biblical principles.</p>
+                        <a href="#" class="event-link">Event Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MOBILE CONTROLS -->
+            <div class="mobile-events-controls">
+                <button class="mobile-event-arrow" id="mobile-event-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="mobile-event-arrow" id="mobile-event-next"><i class="fas fa-chevron-right"></i></button>
             </div>
         </div>
+    </section>
 
-        <!-- Content Grid -->
+    <!-- MINISTRY SECTION -->
+    <section class="ministries-section" id="ministries">
+        <div class="ministries-header reveal">
+            <div class="ministries-top-label">Ministries</div>
+            <div class="ministries-nav-row" id="ministry-tabs"></div>
+        </div>
         <div class="ministry-content-grid">
-            <!-- Left: Text -->
             <div class="ministry-text-col">
                 <h3 id="min-title">RETREAT CAMPS</h3>
                 <span class="ministry-small-label" id="min-label">THREE TIMES A YEAR</span>
                 <p id="min-desc" class="ministry-desc">Frequency: Three times a year<br>Months: March or April, August,
                     and December<br>Purpose: Spiritual renewal, fellowship, and deep teaching</p>
-
                 <div class="ministry-buttons">
                     <a href="#" class="sharp-btn sharp-btn-solid">learn more</a>
                     <a href="#" class="sharp-btn sharp-btn-outline">explore <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
-
-            <!-- Right: Image (Clear Image) -->
             <div class="ministry-img-col">
                 <img id="min-image" src="images/retreat.jpg" alt="Ministry Visual">
             </div>
         </div>
-
-        <!-- MOBILE MINISTRY CONTROLS (Left/Right Arrows) -->
         <div class="mobile-ministry-controls">
             <button class="min-nav-btn" id="mobile-min-prev"><i class="fas fa-chevron-left"></i></button>
             <button class="min-nav-btn" id="mobile-min-next"><i class="fas fa-chevron-right"></i></button>
         </div>
     </section>
 
-    <!-- NEW SERMONS SECTION -->
+    <!-- SERMONS SECTION -->
     <section class="sermons-section" id="sermons">
         <div class="container">
             <div class="section-title reveal">
                 <span>Word of God</span>
                 <h2>Latest Sermons</h2>
             </div>
-
             <div class="sermons-grid">
                 <!-- Sermon 1 -->
                 <div class="sermon-card reveal">
@@ -326,7 +296,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Sermon 2 -->
                 <div class="sermon-card reveal">
                     <div class="sermon-thumb">
@@ -343,7 +312,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Sermon 3 -->
                 <div class="sermon-card reveal">
                     <div class="sermon-thumb">
@@ -364,49 +332,87 @@
         </div>
     </section>
 
-    <!-- NEW SOCIAL COMMUNITY SECTION (DARK BLUE) -->
+    <!-- SOCIAL COMMUNITY SECTION -->
     <section class="social-community-section">
         <div class="container community-content reveal">
             <h2>Join Our Community</h2>
             <p>Connect with us on our social platforms for daily inspiration, live updates, and fellowship.</p>
-
             <div class="social-icons-large">
-                <!-- Youtube -->
                 <a href="https://youtube.com" target="_blank" class="social-icon-item">
-                    <div class="icon-circle">
-                        <i class="fab fa-youtube"></i>
-                    </div>
+                    <div class="icon-circle"><i class="fab fa-youtube"></i></div>
                     <span class="icon-label">YouTube</span>
                 </a>
-
-                <!-- Facebook -->
                 <a href="https://facebook.com" target="_blank" class="social-icon-item">
-                    <div class="icon-circle">
-                        <i class="fab fa-facebook-f"></i>
-                    </div>
+                    <div class="icon-circle"><i class="fab fa-facebook-f"></i></div>
                     <span class="icon-label">Facebook</span>
                 </a>
-
-                <!-- Tiktok -->
                 <a href="https://tiktok.com" target="_blank" class="social-icon-item">
-                    <div class="icon-circle">
-                        <i class="fab fa-tiktok"></i>
-                    </div>
+                    <div class="icon-circle"><i class="fab fa-tiktok"></i></div>
                     <span class="icon-label">Tiktok</span>
                 </a>
-
-                <!-- WhatsApp -->
                 <a href="https://wa.me/" target="_blank" class="social-icon-item">
-                    <div class="icon-circle">
-                        <i class="fab fa-whatsapp"></i>
-                    </div>
+                    <div class="icon-circle"><i class="fab fa-whatsapp"></i></div>
                     <span class="icon-label">WhatsApp</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER (MODIFIED) -->
+    <!-- GIVING & OFFERING SECTION (UPDATED WITH LOGOS) -->
+    <section id="giving" class="giving-section">
+        <div class="container giving-container reveal">
+            <div class="giving-text">
+                <div class="section-title" style="text-align: left;">
+                    <span>Support the Work</span>
+                    <h2>Giving & Offering</h2>
+                </div>
+                <p>
+                    "Give, and it will be given to you. A good measure, pressed down, shaken together and running over,
+                    will be poured into your lap." (Luke 6:38).
+                    Your generous support helps us spread the Gospel, support our community outreach, and maintain our
+                    ministries.
+                </p>
+                <a href="https://changisha.co.tz/c/ABC-Global-CHURCH-OFFERING-/donate" target="_blank"
+                    class="online-giving-btn">
+                    <i class="fas fa-heart"></i> Give Online Now
+                </a>
+            </div>
+
+            <div class="giving-cards">
+                <!-- CRDB Bank -->
+                <div class="giving-card">
+                    <!-- PLACEHOLDER LOGO FOR CRDB. REPLACE src WITH YOUR ACTUAL LOGO -->
+                    <img src="images/crdb.png" alt="CRDB Bank" class="payment-logo">
+                    <div class="bank-details">
+                        <span>Acct Name: Assembly of Believers</span><br>
+                        <span>Acct No: 015J00200388</span>
+                    </div>
+                </div>
+
+                <!-- MIXX BY YAS -->
+                <div class="giving-card">
+                    <!-- PLACEHOLDER LOGO FOR MIXX. REPLACE src WITH YOUR ACTUAL LOGO -->
+                    <img src="images/mixx.png" alt="Mixx by Yas" class="payment-logo">
+                    <div class="bank-details">
+                        <span>Wallet: +255 700 000 000</span><br>
+                        <span>Name: Assembly of Believers</span>
+                    </div>
+                </div>
+
+                <!-- MPESA -->
+                <div class="giving-card">
+                    <!-- PLACEHOLDER LOGO FOR MPESA. REPLACE src WITH YOUR ACTUAL LOGO -->
+                    <img src="images/mpesa.png" alt="M-Pesa" class="payment-logo">
+                    <div class="bank-details">
+                        <span>M-Pesa: +255 700 000 000</span><br>
+                        <span>Name: Assembly of Believers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer id="footer">
         <div class="container">
             <div class="footer-grid">
@@ -421,32 +427,23 @@
                     <h4>Quick Links</h4>
                     <ul class="footer-links">
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#ministries">Ministries</a></li>
-                        <li><a href="#events">Upcoming Events</a></li>
-                        <li><a href="#sermons">Sermons</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="event.html">Upcoming Events</a></li>
+                        <li><a href="contact.html">Giving & Offering</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Contact Us</h4>
                     <ul class="footer-contact">
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Kinzudi, Dar es Salaam, Tanzania</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-phone"></i>
-                            <span>+255 700 000 000</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            <span>info@abcglobal.co.tz</span>
-                        </li>
+                        <li><i class="fas fa-map-marker-alt"></i><span>Kinzudi, Dar es Salaam, Tanzania</span></li>
+                        <li><i class="fas fa-phone"></i><span>+255 700 000 000</span></li>
+                        <li><i class="fas fa-envelope"></i><span>info@abcglobal.co.tz</span></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                &copy; 2024 Assembly of Believers Church. All Rights Reserved. | Designed by Aura Web Designers
+                &copy; 2026 Assembly of Believers Church. All Rights Reserved. | Designed by Aura Web Designers
             </div>
         </div>
     </footer>
